@@ -1,8 +1,9 @@
 #' Create a directory with date_title and index.qmd
 #'
 #' Assumption run at the root of blog 
-#' 
+#'
 #' @param title a string, space will be converted to "_"
+#' @param author a string, me
 #'
 #' @export
 #'
@@ -11,7 +12,7 @@
 #' new_post("Boule et Bill")
 #'}
 
-new_post <- function(title, author = "default") {
+new_post <- function(title, author = "Olivier Leroy") {
 
   t <- tolower(gsub(" ", "_", title, fixed = TRUE))
 

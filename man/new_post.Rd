@@ -4,10 +4,12 @@
 \alias{new_post}
 \title{Create a directory with date_title and index.qmd}
 \usage{
-new_post(title, author = "default")
+new_post(title, author = "Olivier Leroy")
 }
 \arguments{
 \item{title}{a string, space will be converted to "_"}
+
+\item{author}{a string, me}
 }
 \description{
 Assumption run at the root of blog
