@@ -1,6 +1,6 @@
 #' Create a directory with date_title and index.qmd
 #'
-#' Assumption run at the root of blog 
+#' Assumption run at the root of blog
 #'
 #' @param title a string, space will be converted to "_"
 #' @param author a string, me
@@ -35,6 +35,7 @@ new_post <- function(title, author = "Olivier Leroy") {
     writeLines(c("---",
                  sprintf("title: '%s'", title),
                  sprintf("author: '%s'", author),
+                 sprintf("date: '%s'", Sys.Date()),
                  "categories:",
                  "---"), con)
     close(con)
